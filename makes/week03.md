@@ -1,8 +1,8 @@
 # Week 3 – Selfie & Identity
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+Eva AI First Image
+![](../images/Eva%20AI.png) 
 
 ## Process Notes
 How did you make this?
