@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Eva Guidone | Digital Humanities & Critical Making</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .standalone-resume-header {
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--border-hairline);
+      margin-bottom: 40px;
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .back-nav:hover {
+      color: var(--text-pure);
+      transform: translateX(-4px);
+    }
+    .resume-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header no-print">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-group">
+        <div class="logo-badge">EG</div>
+        <div class="logo-text">EVA GUIDONE <span class="logo-sub">// DH101</span></div>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn-outline" style="padding:8px 18px; font-size:0.75rem;">&larr; Back to Portfolio</a>
+        <button onclick="window.print()" class="btn-primary" style="padding:8px 20px; font-size:0.75rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom: 80px;">
+    <div class="standalone-resume-header no-print">
+      <a href="index.html" class="back-nav">&larr; Return to Home & Tracklist</a>
+      <div class="resume-top-bar">
+        <div>
+          <div class="section-label">Curriculum Vitae</div>
+          <h1 class="serif" style="font-size: 2.2rem;">Eva Guidone &mdash; Resume</h1>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button onclick="window.print()" class="btn-primary">
+            Print / PDF
+          </button>
+          <a href="pages/resume.md" target="_blank" class="btn-outline">
+            Raw Markdown
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Resume Card -->
+    <article class="resume-card" id="printableResume">
+      <header class="resume-hero-header">
+        <div>
+          <h1 class="resume-name">Eva Guidone</h1>
+          <p class="resume-tagline">Digital Humanities &bull; Critical Making &bull; Research & Ethics</p>
+        </div>
+        <div class="resume-contact-list">
+          <div>Denison University &bull; Granville, OH</div>
+          <div><a href="mailto:guidon_e1@denison.edu">guidon_e1@denison.edu</a></div>
+          <div><a href="https://github.com/guidone1-ai/DH101" target="_blank">github.com/guidone1-ai/DH101</a></div>
+        </div>
+      </header>
+
+      <!-- Profile Summary -->
+      <section class="resume-block">
+        <h2 class="resume-block-title">01 // Profile Summary</h2>
+        <p class="resume-item-desc" style="font-size: 1rem; line-height: 1.8;">
+          Undergraduate scholar and critical maker at Denison University exploring the intersections of digital humanities, creative technology, archival research, and algorithmic culture. Experienced in combining rigorous critical inquiry with hands-on computation, physical/digital reverse engineering, web design, and accountable generative AI integration.
+        </p>
+      </section>
+
+      <div class="resume-grid">
+        <!-- Education -->
+        <section class="resume-block">
+          <h2 class="resume-block-title">02 // Education</h2>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3 class="resume-item-title">Denison University</h3>
+              <span class="resume-item-date">Granville, OH | Exp. 2028</span>
+            </div>
+            <div class="resume-item-subtitle">Bachelor of Arts &bull; Candidate</div>
+            <p class="resume-item-desc">
+              <strong>Relevant Coursework:</strong> Digital Humanities (DH101: Critical Making, Reverse Engineering & Algorithmic Ethics), Computational Culture, Media Analysis, Qualitative Research, Data Ethics.
+            </p>
+          </div>
+        </section>
+
+        <!-- Technical & Humanities Skills -->
+        <section class="resume-block">
+          <h2 class="resume-block-title">03 // Competencies & Tools</h2>
+          <p class="resume-item-desc">
+            <strong>Critical Research:</strong> Reverse engineering, archival research, algorithmic auditing, ethical AI evaluation, textual analysis.
+          </p>
+          <p class="resume-item-desc" style="margin-top: 8px;">
+            <strong>Web & Creative Code:</strong> HTML5, CSS3/Modern Layouts, Markdown, Git & GitHub Pages, UI/UX aesthetics, Typography.
+          </p>
+          <div class="resume-skills-group">
+            <span class="skill-tag">Digital Humanities</span>
+            <span class="skill-tag">Critical Making</span>
+            <span class="skill-tag">Reverse Engineering</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Ethical AI Auditing</span>
+            <span class="skill-tag">Accessibility (a11y)</span>
+            <span class="skill-tag">Digital Archives</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Projects & Studio Making -->
+      <section class="resume-block">
+        <h2 class="resume-block-title">04 // Critical Making & Projects</h2>
+        
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3 class="resume-item-title">DH101 Digital Portfolio & Archive</h3>
+            <span class="resume-item-date">Spring 2026</span>
+          </div>
+          <div class="resume-item-subtitle">Creator & Lead Designer &bull; Denison University</div>
+          <p class="resume-item-desc">
+            Engineered and designed an editorial, high-contrast black-and-white digital web archive inspired by vinyl music culture and R&B liner notes. Integrated a dual-track catalogue containing 13 weeks of critical studio makes and reflective theoretical inquiries.
+          </p>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3 class="resume-item-title">Reverse Engineering: The Artifact & Labor Dynamics</h3>
+            <span class="resume-item-date">Spring 2026</span>
+          </div>
+          <div class="resume-item-subtitle">Critical Analysis Project &bull; DH101</div>
+          <p class="resume-item-desc">
+            Deconstructed and reverse-engineered physical and software artifacts to map invisible supply chains, labor participation, and algorithmic agency. Produced structured attribution logs evaluating machine vs. human authorship.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience & Leadership -->
+      <section class="resume-block">
+        <h2 class="resume-block-title">05 // Campus Leadership & Experience</h2>
+        
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h3 class="resume-item-title">Collaborative Digital Maker & Peer Reviewer</h3>
+            <span class="resume-item-date">2026 &ndash; Present</span>
+          </div>
+          <div class="resume-item-subtitle">Denison University</div>
+          <p class="resume-item-desc">
+            Participate in interdisciplinary workshops and peer reviews evaluating digital humanities methodologies, sustainable web practices, and accountable AI adoption across student cohorts.
+          </p>
+        </div>
+      </section>
+
+      <!-- Ethical Commitments -->
+      <section class="resume-block" style="margin-bottom: 0;">
+        <h2 class="resume-block-title">06 // Course Ethos & Declarations</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          <div>
+            <h4 style="font-family: var(--font-sans); font-size: 0.95rem; margin-bottom: 4px;">Transparent AI</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Committed to logging prompts, evaluating generative models, and preserving critical discernment.</p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-sans); font-size: 0.95rem; margin-bottom: 4px;">Digital Accessibility</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Built with semantic markup, high contrast, and accessible reading structures.</p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-sans); font-size: 0.95rem; margin-bottom: 4px;">Sustainability</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Zero-dependency lightweight static architecture to reduce server energy consumption.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer no-print">
+    <div class="container footer-content">
+      <div>&copy; 2026 EVA GUIDONE &bull; DENISON UNIVERSITY</div>
+      <div class="footer-meta">
+        <a href="index.html">Portfolio</a>
+        <a href="pages/resume.md">Markdown Version</a>
+        <a href="#printableResume" onclick="window.print(); return false;">Print PDF</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

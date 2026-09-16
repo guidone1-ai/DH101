@@ -1,0 +1,26 @@
+# GitHub Pages Configuration for Eva Guidone DH101 Portfolio
+title: Eva Guidone — DH101 Critical Making & Resume
+description: Digital Humanities portfolio, critical making archive, and resume space with a Noir Vinyl R&B aesthetic.
+author: Eva Guidone
+email: guidon_e1@denison.edu
+
+# Exclude unnecessary files from Jekyll build
+exclude:
+  - README.md
+  - LICENSE
+  - .gitattributes
+
+# Use kramdown for markdown parsing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Keep assets and styles
+include:
+  - assets
+  - pages
+  - makes
+  - reflections
+  - ai-log
+

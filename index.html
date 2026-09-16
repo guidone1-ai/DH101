@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eva Guidone — DH101 Critical Making & Resume</title>
+  <meta name="description" content="Digital humanities portfolio, critical making archive, and professional resume space for Eva Guidone at Denison University." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#top" class="logo-group">
+        <div class="logo-badge">EG</div>
+        <div class="logo-text">EVA GUIDONE <span class="logo-sub">// DH101</span></div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#tracks" class="nav-link">Tracklist</a>
+        <a href="#ethos" class="nav-link">Ethos & AI</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Vinyl Track & Sound Toggle -->
+        <button id="ambienceToggleBtn" class="ambience-btn" title="Play kwn — back of the club (instrumental)">
+          <div class="sound-bars">
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+          </div>
+          <span class="btn-label">kwn &bull; back of the club</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="album-badge">
+            <span class="dot"></span>
+            <span>Side A / Side B &bull; 33⅓ RPM &bull; Denison DH</span>
+          </div>
+          
+          <h1 class="hero-name">Eva Guidone</h1>
+          <div class="hero-subtitle">Digital Humanities &bull; Critical Making &bull; Archive</div>
+          
+          <p class="hero-bio">
+            Hello, DH &mdash; this site documents my critical making, reverse engineering, and theoretical reflections throughout the semester. Designed through the lens of a monochrome R&B vinyl record: high-contrast, introspective, and dedicated to exploring what it means to create in the age of computational media.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#resume" class="btn-primary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              View Resume Space
+            </a>
+            <a href="#tracks" class="btn-outline">
+              Explore Tracklist &darr;
+            </a>
+            <button class="btn-outline" data-doc-path="pages/about.md" data-doc-title="About Eva Guidone" data-doc-badge="LINER NOTES // ARTIST">
+              Read Bio
+            </button>
+          </div>
+        </div>
+
+        <!-- Vinyl Record Visual Motif & Player -->
+        <div class="vinyl-wrapper">
+          <div class="vinyl-container" id="vinylDiscTrigger" title="Click to play / pause kwn — back of the club (instrumental)">
+            <div class="vinyl-sleeve">
+              <div class="sleeve-header">
+                <span>kwn &bull; 2025</span>
+                <span>STEREO &bull; 114 BPM</span>
+              </div>
+              <div class="sleeve-center">
+                <div class="sleeve-title">back of the club</div>
+                <div class="sleeve-meta">INSTRUMENTAL &bull; R&amp;B NOIR</div>
+              </div>
+              <div class="sleeve-footer">
+                <span>EVA GUIDONE // DH101</span>
+                <span>SIDE A // TRACK 00</span>
+              </div>
+            </div>
+
+            <div class="vinyl-record" id="vinylRecord">
+              <div class="vinyl-groove groove-1"></div>
+              <div class="vinyl-groove groove-2"></div>
+              <div class="vinyl-groove groove-3"></div>
+              <div class="vinyl-groove groove-4"></div>
+              <div class="vinyl-label">
+                <div class="label-artist">kwn</div>
+                <div class="label-track">back of the club</div>
+                <div class="label-speed">33⅓ RPM &bull; INST</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dedicated Vinyl Player Bar -->
+          <div class="vinyl-player-bar" id="vinylPlayerBar">
+            <button id="heroPlayBtn" class="vinyl-play-btn" title="Play / Pause kwn — back of the club">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </svg>
+            </button>
+            <div class="track-meta">
+              <div class="track-meta-title">back of the club (instrumental)</div>
+              <div class="track-meta-artist">kwn &bull; R&amp;B Noir Edit</div>
+            </div>
+            <div class="sound-bars" style="margin-left:auto;">
+              <div class="sound-bar"></div>
+              <div class="sound-bar"></div>
+              <div class="sound-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section" id="resume">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <div class="section-label">Curriculum Vitae & Archive</div>
+            <h2 class="section-title">The Resume Space</h2>
+          </div>
+          <div class="resume-actions">
+            <a href="resume.html" class="btn-primary" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              Printable Resume Page
+            </a>
+            <button class="btn-outline" data-doc-path="pages/resume.md" data-doc-title="Resume (Markdown Source)" data-doc-badge="PAGES // RESUME.MD">
+              Raw Markdown
+            </button>
+          </div>
+        </div>
+
+        <!-- Embedded Full Resume Card -->
+        <article class="resume-card">
+          <header class="resume-hero-header">
+            <div>
+              <h3 class="resume-name">Eva Guidone</h3>
+              <p class="resume-tagline">Digital Humanities &bull; Critical Making &bull; Research & Ethics</p>
+            </div>
+            <div class="resume-contact-list">
+              <div>Denison University &bull; Granville, OH</div>
+              <div><a href="mailto:guidon_e1@denison.edu">guidon_e1@denison.edu</a></div>
+              <div><a href="https://github.com/guidone1-ai/DH101" target="_blank">github.com/guidone1-ai/DH101</a></div>
+            </div>
+          </header>
+
+          <!-- Profile -->
+          <div class="resume-block">
+            <h4 class="resume-block-title">01 // Profile</h4>
+            <p class="resume-item-desc" style="font-size: 0.98rem; line-height: 1.75;">
+              Undergraduate scholar and critical maker at Denison University focusing on the intersection of digital humanities, creative technology, archival research, and culture. Experienced in combining analytical inquiry with hands-on computational tools, physical and digital reverse engineering, web design, and thoughtful AI integration.
+            </p>
+          </div>
+
+          <div class="resume-grid">
+            <!-- Education -->
+            <div class="resume-block">
+              <h4 class="resume-block-title">02 // Education</h4>
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <div class="resume-item-title">Denison University</div>
+                  <span class="resume-item-date">Exp. 2028</span>
+                </div>
+                <div class="resume-item-subtitle">Bachelor of Arts &bull; Granville, OH</div>
+                <p class="resume-item-desc">
+                  <strong>Coursework:</strong> Digital Humanities (DH101: Critical Making & Ethics), Computational Culture, Media Studies, Research Methods, Data Ethics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="resume-block">
+              <h4 class="resume-block-title">03 // Competencies & Tools</h4>
+              <p class="resume-item-desc">
+                <strong>Research & Making:</strong> Reverse engineering, archival research, prompt engineering & audit, qualitative analysis.
+              </p>
+              <p class="resume-item-desc" style="margin-top: 6px;">
+                <strong>Web & Digital:</strong> HTML5, CSS3, Markdown, Git & GitHub Pages, UI/UX aesthetics, Typography.
+              </p>
+              <div class="resume-skills-group">
+                <span class="skill-tag">Digital Humanities</span>
+                <span class="skill-tag">Critical Making</span>
+                <span class="skill-tag">Reverse Engineering</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Git / GitHub Pages</span>
+                <span class="skill-tag">AI Auditing & Attribution</span>
+                <span class="skill-tag">Accessibility Standards</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-block">
+            <h4 class="resume-block-title">04 // Critical Making & Projects</h4>
+            
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title">DH101 Digital Portfolio & Archive</div>
+                <span class="resume-item-date">Spring 2026</span>
+              </div>
+              <div class="resume-item-subtitle">Architect & Designer &bull; Denison University</div>
+              <p class="resume-item-desc">
+                Conceived and engineered an editorial R&B vinyl-themed web archive. Houses 13 weekly studio makes and 13 reflective essays examining human-machine co-creation, algorithmic governance, and archival preservation.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title">Artifact Deconstruction & Reverse Engineering</div>
+                <span class="resume-item-date">Spring 2026</span>
+              </div>
+              <div class="resume-item-subtitle">Critical Inquiry Project &bull; DH101</div>
+              <p class="resume-item-desc">
+                Deconstructed physical and software tools to expose hidden labor, interface biases, and infrastructural dependencies. Documented findings with structured attribution logs and process notes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Leadership -->
+          <div class="resume-block" style="margin-bottom: 0;">
+            <h4 class="resume-block-title">05 // Leadership & Community</h4>
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title">Collaborative Digital Maker & Peer Reviewer</div>
+                <span class="resume-item-date">2026 &ndash; Present</span>
+              </div>
+              <div class="resume-item-subtitle">Denison University</div>
+              <p class="resume-item-desc">
+                Facilitate peer critiques and collaborative testing of digital humanities prototypes and generative AI frameworks, prioritizing inclusive design and environmental sustainability.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tracklist Section: Side A (Makes) & Side B (Reflections) -->
+    <section class="tracklist-section" id="tracks">
+      <div class="container">
+        <div class="section-label">Catalogue & Recordings</div>
+        <h2 class="section-title">The Tracklist</h2>
+        <p style="margin-bottom: 32px; max-width: 600px;">
+          Browse the full semester catalogue. Select a track to listen in and open the liner notes directly in the live reader.
+        </p>
+
+        <!-- Filter Tabs -->
+        <div class="tracklist-controls">
+          <button class="filter-btn active" data-filter="all">All Tracks (26)</button>
+          <button class="filter-btn" data-filter="side-a">Side A: Critical Makes (12)</button>
+          <button class="filter-btn" data-filter="side-b">Side B: Reflections (13)</button>
+        </div>
+
+        <!-- Track Table -->
+        <div class="track-table">
+
+          <!-- WEEK 01 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week01.md" data-doc-title="Week 1 Make: Reverse Engineering" data-doc-badge="SIDE A // TRACK 01">
+            <div class="track-num">A &bull; 01</div>
+            <div class="track-title">Reverse Engineering</div>
+            <div class="track-desc">Deconstructing physical and software artifacts, tool provenance, and labor.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week01.md" data-doc-title="Week 1 Reflection: Making in the Age of AI" data-doc-badge="SIDE B // TRACK 01">
+            <div class="track-num">B &bull; 01</div>
+            <div class="track-title">What Counts as Making?</div>
+            <div class="track-desc">What is gained and lost when machines participate in human creativity?</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 02 -->
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week02.md" data-doc-title="Week 2 Reflection: Critical Tools & Human Agency" data-doc-badge="SIDE B // TRACK 02">
+            <div class="track-num">B &bull; 02</div>
+            <div class="track-title">Agency & Critical Tools</div>
+            <div class="track-desc">Evaluating autonomy, interface defaults, and technological affordances.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 03 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week03.md" data-doc-title="Week 3 Make: Studio Exploration" data-doc-badge="SIDE A // TRACK 03">
+            <div class="track-num">A &bull; 03</div>
+            <div class="track-title">Critical Studio Make 03</div>
+            <div class="track-desc">Physical-computational prototyping and process documentation.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week03.md" data-doc-title="Week 3 Reflection: Infrastructure & Power" data-doc-badge="SIDE B // TRACK 03">
+            <div class="track-num">B &bull; 03</div>
+            <div class="track-title">Infrastructure & Power</div>
+            <div class="track-desc">The hidden politics of servers, platforms, and digital access.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 04 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week04.md" data-doc-title="Week 4 Make: Algorithmic Experiments" data-doc-badge="SIDE A // TRACK 04">
+            <div class="track-num">A &bull; 04</div>
+            <div class="track-title">Algorithmic Systems</div>
+            <div class="track-desc">Investigating generative models and rule-based artistic systems.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week04.md" data-doc-title="Week 4 Reflection: Algorithmic Culture" data-doc-badge="SIDE B // TRACK 04">
+            <div class="track-num">B &bull; 04</div>
+            <div class="track-title">Algorithmic Culture</div>
+            <div class="track-desc">How algorithms shape human attention, memory, and cultural production.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 05 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week05.md" data-doc-title="Week 5 Make: Materiality & Interface" data-doc-badge="SIDE A // TRACK 05">
+            <div class="track-num">A &bull; 05</div>
+            <div class="track-title">The Digital Interface</div>
+            <div class="track-desc">Exploring tactile feedback and tangible user interactions.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week05.md" data-doc-title="Week 5 Reflection: Materiality of Code" data-doc-badge="SIDE B // TRACK 05">
+            <div class="track-num">B &bull; 05</div>
+            <div class="track-title">Materiality of Code</div>
+            <div class="track-desc">Challenging the myth of immateriality in software systems.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 06 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week06.md" data-doc-title="Week 6 Make: Archival Interventions" data-doc-badge="SIDE A // TRACK 06">
+            <div class="track-num">A &bull; 06</div>
+            <div class="track-title">Archival Interventions</div>
+            <div class="track-desc">Digitizing, annotating, and remediating historical materials.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week06.md" data-doc-title="Week 6 Reflection: Archival Silences" data-doc-badge="SIDE B // TRACK 06">
+            <div class="track-num">B &bull; 06</div>
+            <div class="track-title">Archival Silences</div>
+            <div class="track-desc">Who is remembered and who is excluded from computational records?</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 07 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week07.md" data-doc-title="Week 7 Make: Midterm Artifact" data-doc-badge="SIDE A // TRACK 07">
+            <div class="track-num">A &bull; 07</div>
+            <div class="track-title">Midterm Artifact Synthesis</div>
+            <div class="track-desc">Synthesizing critical making methods into a cohesive artifact.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week07.md" data-doc-title="Week 7 Reflection: Mid-Semester Inquiry" data-doc-badge="SIDE B // TRACK 07">
+            <div class="track-num">B &bull; 07</div>
+            <div class="track-title">Mid-Semester Inquiry</div>
+            <div class="track-desc">Evaluating evolving critical positions and semester trajectory.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 08 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week08.md" data-doc-title="Week 8 Make: Open Knowledge & Access" data-doc-badge="SIDE A // TRACK 08">
+            <div class="track-num">A &bull; 08</div>
+            <div class="track-title">Open Knowledge Tooling</div>
+            <div class="track-desc">Deploying open-source frameworks and decentralized archives.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week08.md" data-doc-title="Week 8 Reflection: The Commons" data-doc-badge="SIDE B // TRACK 08">
+            <div class="track-num">B &bull; 08</div>
+            <div class="track-title">The Digital Commons</div>
+            <div class="track-desc">Enclosure, intellectual property, and democratic access to information.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 09 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week09.md" data-doc-title="Week 9 Make: Creative Systems" data-doc-badge="SIDE A // TRACK 09">
+            <div class="track-num">A &bull; 09</div>
+            <div class="track-title">Creative Systems Studio</div>
+            <div class="track-desc">Experimental media and collaborative software workflows.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week09.md" data-doc-title="Week 9 Reflection: Digital Labor" data-doc-badge="SIDE B // TRACK 09">
+            <div class="track-num">B &bull; 09</div>
+            <div class="track-title">Digital Labor & Ethics</div>
+            <div class="track-desc">Annotators, content moderators, and the human cost of smart systems.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 10 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week10.md" data-doc-title="Week 10 Make: Speculative Prototyping" data-doc-badge="SIDE A // TRACK 10">
+            <div class="track-num">A &bull; 10</div>
+            <div class="track-title">Speculative Prototypes</div>
+            <div class="track-desc">Designing provocative futures through critical diegetic artifacts.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week10.md" data-doc-title="Week 10 Reflection: Speculative Futures" data-doc-badge="SIDE B // TRACK 10">
+            <div class="track-num">B &bull; 10</div>
+            <div class="track-title">Speculative Futures</div>
+            <div class="track-desc">Using design fiction to challenge dominant technological paradigms.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 11 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week11.md" data-doc-title="Week 11 Make: AI Collaboration & Audit" data-doc-badge="SIDE A // TRACK 11">
+            <div class="track-num">A &bull; 11</div>
+            <div class="track-title">AI Collaboration & Audit</div>
+            <div class="track-desc">Testing prompt engineering, hallucination boundaries, and attributions.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week11.md" data-doc-title="Week 11 Reflection: Human vs Synthetic" data-doc-badge="SIDE B // TRACK 11">
+            <div class="track-num">B &bull; 11</div>
+            <div class="track-title">Human vs Synthetic</div>
+            <div class="track-desc">Authorship, authenticity, and relational creativity with LLMs.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 12 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week12.md" data-doc-title="Week 12 Make: Public Humanities" data-doc-badge="SIDE A // TRACK 12">
+            <div class="track-num">A &bull; 12</div>
+            <div class="track-title">Public Humanities Installation</div>
+            <div class="track-desc">Making critical scholarship accessible to non-academic publics.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week12.md" data-doc-title="Week 12 Reflection: Community Engagement" data-doc-badge="SIDE B // TRACK 12">
+            <div class="track-num">B &bull; 12</div>
+            <div class="track-title">Community & Audiences</div>
+            <div class="track-desc">Translating critique into community action and public interfaces.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <!-- WEEK 13 -->
+          <div class="track-row" data-category="side-a" data-doc-path="makes/week13.md" data-doc-title="Week 13 Make: Capstone Making Synthesis" data-doc-badge="SIDE A // TRACK 13">
+            <div class="track-num">A &bull; 13</div>
+            <div class="track-title">Capstone Studio Synthesis</div>
+            <div class="track-desc">Final making artifact integrating theory, materiality, and craft.</div>
+            <div><span class="track-side-badge">Side A: Make</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+          <div class="track-row" data-category="side-b" data-doc-path="reflections/week13.md" data-doc-title="Week 13 Reflection: Semester Critical Synthesis" data-doc-badge="SIDE B // TRACK 13">
+            <div class="track-num">B &bull; 13</div>
+            <div class="track-title">Semester Critical Synthesis</div>
+            <div class="track-desc">Comprehensive reflection on critical making, epistemology, and ethics.</div>
+            <div><span class="track-side-badge">Side B: Reflect</span></div>
+            <div class="track-action">Read Track &rarr;</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Liner Notes: Course Ethos, AI & Accessibility -->
+    <section class="ethos-section" id="ethos">
+      <div class="container">
+        <div class="section-label">Liner Notes & Principles</div>
+        <h2 class="section-title">Course Ethos & Guidelines</h2>
+        <p style="margin-bottom: 40px; max-width: 600px;">
+          The ideological foundation behind this archive: ethical computation, inclusive design, and ecological stewardship.
+        </p>
+
+        <div class="ethos-grid">
+          <!-- About -->
+          <div class="ethos-card" data-doc-path="pages/about.md" data-doc-title="About Eva Guidone" data-doc-badge="LINER NOTES // 01">
+            <div>
+              <div class="ethos-card-num">NOTE 01</div>
+              <h3 class="ethos-card-title">About the Maker</h3>
+              <p class="ethos-card-text">Scholarly background, creative interests, and personal perspective in Denison’s DH101.</p>
+            </div>
+            <div class="ethos-card-link">Read Bio &rarr;</div>
+          </div>
+
+          <!-- AI Use Policy -->
+          <div class="ethos-card" data-doc-path="pages/how-i-use-ai.md" data-doc-title="How I Use AI" data-doc-badge="LINER NOTES // 02">
+            <div>
+              <div class="ethos-card-num">NOTE 02</div>
+              <h3 class="ethos-card-title">How I Use AI</h3>
+              <p class="ethos-card-text">Accountable boundaries for generative AI: prompt auditing, provenance, and critical human discernment.</p>
+            </div>
+            <div class="ethos-card-link">Read Policy &rarr;</div>
+          </div>
+
+          <!-- AI Use Log -->
+          <div class="ethos-card" data-doc-path="ai-log/template-ai-log.md" data-doc-title="AI Use Log Template" data-doc-badge="LINER NOTES // 03">
+            <div>
+              <div class="ethos-card-num">NOTE 03</div>
+              <h3 class="ethos-card-title">AI Use Log</h3>
+              <p class="ethos-card-text">Structured audit template documenting tool usage, prompts, outputs, and critical decisions.</p>
+            </div>
+            <div class="ethos-card-link">View Template &rarr;</div>
+          </div>
+
+          <!-- Accessibility -->
+          <div class="ethos-card" data-doc-path="pages/accessibility.md" data-doc-title="Accessibility Statement" data-doc-badge="LINER NOTES // 04">
+            <div>
+              <div class="ethos-card-num">NOTE 04</div>
+              <h3 class="ethos-card-title">Accessibility (a11y)</h3>
+              <p class="ethos-card-text">High-contrast monochrome palette, semantic HTML5, keyboard navigation, and screen reader friendliness.</p>
+            </div>
+            <div class="ethos-card-link">Read Statement &rarr;</div>
+          </div>
+
+          <!-- Sustainability -->
+          <div class="ethos-card" data-doc-path="pages/sustainability.md" data-doc-title="Sustainability Statement" data-doc-badge="LINER NOTES // 05">
+            <div>
+              <div class="ethos-card-num">NOTE 05</div>
+              <h3 class="ethos-card-title">Sustainability</h3>
+              <p class="ethos-card-text">Low-carbon static architecture: zero heavy frameworks, minimal HTTP requests, and synthesized audio.</p>
+            </div>
+            <div class="ethos-card-link">Read Statement &rarr;</div>
+          </div>
+
+          <!-- Markdown Guide -->
+          <div class="ethos-card" data-doc-path="pages/markdown-guide.md" data-doc-title="Markdown Reference Guide" data-doc-badge="LINER NOTES // 06">
+            <div>
+              <div class="ethos-card-num">NOTE 06</div>
+              <h3 class="ethos-card-title">Markdown Guide</h3>
+              <p class="ethos-card-text">Formatting documentation, headings hierarchy, image embedding standards, and reflection templates.</p>
+            </div>
+            <div class="ethos-card-link">Read Guide &rarr;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Slide-Out Reader Drawer / Modal -->
+  <aside class="reader-modal" id="readerModal" aria-hidden="true" role="dialog">
+    <div class="reader-panel">
+      <div class="reader-header">
+        <div>
+          <div class="reader-badge" id="readerBadge">DH101 LINER NOTES</div>
+          <h3 class="serif" id="readerTitle" style="font-size: 1.3rem; margin-top: 4px;">Document Reader</h3>
+        </div>
+        <button class="reader-close-btn" id="closeReaderBtn" title="Close reader (Esc)">&times;</button>
+      </div>
+      <div class="reader-body" id="readerContent">
+        <!-- Dynamically rendered markdown will appear here -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        &copy; 2026 EVA GUIDONE &bull; DENISON UNIVERSITY &bull; DH101 ARCHIVE
+      </div>
+      <div class="footer-meta">
+        <a href="#top">Back to Top &uarr;</a>
+        <a href="resume.html">Print Resume</a>
+        <a href="https://github.com/guidone1-ai/DH101" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Audio Sources: Real Instrumental of "Back of the Club" by kwn -->
+  <audio id="localTrackAudio" preload="auto">
+    <source src="assets/audio/back-of-the-club-instrumental.m4a" type="audio/mp4" />
+    <source src="assets/audio/back-of-the-club-instrumental.mp3" type="audio/mpeg" />
+    <source src="assets/audio/back-of-the-club-instrumental.mp4" type="audio/mp4" />
+  </audio>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
